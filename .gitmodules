@@ -1,0 +1,3 @@
+[submodule "KindleClippings"]
+	path = KindleClippings
+	url = https://github.com/FBoucher/KindleClippings.git
