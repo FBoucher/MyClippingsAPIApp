@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClippingsAPIApp", "MyClippingsAPIApp\MyClippingsAPIApp.csproj", "{9D636E79-3DA5-4A85-BE14-0B2C39E3A437}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KindleClippings", "..\KindleClippings\KindleClippings\KindleClippings.csproj", "{DB3E26FE-B1C3-42F5-8660-837EC63A16C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9D636E79-3DA5-4A85-BE14-0B2C39E3A437}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D636E79-3DA5-4A85-BE14-0B2C39E3A437}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D636E79-3DA5-4A85-BE14-0B2C39E3A437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB3E26FE-B1C3-42F5-8660-837EC63A16C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB3E26FE-B1C3-42F5-8660-837EC63A16C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB3E26FE-B1C3-42F5-8660-837EC63A16C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB3E26FE-B1C3-42F5-8660-837EC63A16C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
