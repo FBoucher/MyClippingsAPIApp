@@ -1,4 +1,5 @@
 ﻿using KindleClippings;
+using MyClippingsAPIApp.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +22,11 @@ namespace MyClippingsAPIApp.Controllers
 
         [Route("KindleClippingsAfter")]
         [HttpGet]
-        public IEnumerable<Clipping> KindleClippingsAfter(string filename, string StartDate)
+        public IEnumerable<Clipping> KindleClippingsAfter(string containername, string filename, string StartDate)
         {
-            var clippings = KindleClippings.MyClippingsParser.Parse(filename);
+            var blobStream = StorageHelper.GetStreamFromStorage(containername, filename);
+
+            var clippings = KindleClippings.MyClippingsParser.Parse(blobStream);
 
             var result = from c in clippings
                          where c.DateAdded >= DateTime.Parse(StartDate)
