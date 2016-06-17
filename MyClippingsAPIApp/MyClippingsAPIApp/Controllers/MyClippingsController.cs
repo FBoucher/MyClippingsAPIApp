@@ -35,5 +35,22 @@ namespace MyClippingsAPIApp.Controllers
             return result;
         }
 
+
+
+        [Route("ArrayKindleClippingsAfter")]
+        [HttpGet]
+        public Clipping[] ArrayKindleClippingsAfter(string containername, string filename, string StartDate)
+        {
+            var blobStream = StorageHelper.GetStreamFromStorage(containername, filename);
+
+            var clippings = KindleClippings.MyClippingsParser.Parse(blobStream);
+
+            var result = (from c in clippings
+                          where c.DateAdded >= DateTime.Parse(StartDate)
+                          && c.ClippingType == ClippingTypeEnum.Note
+                          select c as KindleClippings.Clipping).ToArray<Clipping>();
+
+            return result;
+        }
     }
 }
