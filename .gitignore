@@ -215,3 +215,5 @@ ModelManifest.xml
 # Private AppSettings
 PrivateAppSettings.config
 /My Clippings.txt
+/MyClippingsAPIApp/MyClippingsAPIApp/Properties/PublishProfiles/MyClippingsAPIApp - Web Deploy (2).pubxml
+/MyClippingsAPIApp/MyClippingsAPIApp/Properties/PublishProfiles/MyClippingsAPIApp - Web Deploy.pubxml
