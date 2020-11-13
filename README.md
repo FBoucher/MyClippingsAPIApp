@@ -1,7 +1,7 @@
-﻿# MyClippingsAPIApp
+# MyClippingsAPIApp
 
 My Clippings API App is a wrapper around the excellent [EdRyan/KindleClippings](https://github.com/EdRyan/KindleClippings) (.NET parser for the Amazon Kindle's "My Clippings.txt" file)
-That will make the library accessible to [Azure LogicApp](https://azure.microsoft.com/en-us/services/app-service/logic/).
+That will make the library accessible to [Azure LogicApp](https://azure.microsoft.com/services/app-service/logic/?WT.mc_id=dotnet-0000-frbouche).
 
 ## How to use
 
